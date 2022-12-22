@@ -27,7 +27,7 @@ Como QAs precisamos garantir que no mínimo nossa ferramenta de apontamento de B
  - SeleniumWebdriver;
  - JUnit;
  - JAVA;
-- Versionar o código na sua branch `feature/seu-usuario-github`;
+ - Versionar o código na sua branch `feature/seu-usuario-github`;
 
 **Vamos avaliar**
  - Raciocínio lógico; 
@@ -39,8 +39,7 @@ Como QAs precisamos garantir que no mínimo nossa ferramenta de apontamento de B
   - Através do script de automação gerar um print da interface e anexar o mesmo utilizando o campo [Anexar prints do bug];
   - - Construir a user story da página de acordo com as percepções como Negócio (Utilize BDD
   - Clean Code;
-  - Documentação;
-  - 
+  - Documentação;  
 
   ## Nossa ferramenta de apontamento de Bugs
 [https://app.pipefy.com/public/form/_Lid-wF_](https://app.pipefy.com/public/form/_Lid-wF_)
