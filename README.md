@@ -1,46 +1,50 @@
-# Soluevo QA Challenge
-O objetivo do desafio abaixo é criar uma suite de testes automatizados para garantir o funcionamento básico da nossa [Ferramenta de Apontamento de Bugs](https://app.pipefy.com/public/form/_Lid-wF_)
+## Soluevo QA Challenge
 
-O desafio se divide em 2 seções: **Obrigatório e Desejado**. Esperamos que você conclua todas as tarefas da seção **Obrigatório**. Na seção **Plus** quanto mais itens você concluir mais felizes vamos ficar :)
+Desafio de automação Soluevo.
 
-## O desafio
-Temos uma ferramenta de apontamento de BUGs, esta feature não passou pelo refinamento, portanto foi criada de acordo com a experiencia dos desenvolvedores, precisamos que COM BASE na pagina apresentada, seja elaborada uma user story com critérios de aceite e cenários de teste equivalentes, assim como os bugs que forem encontrados na mesma.
-Como QAs precisamos garantir que no mínimo nossa ferramenta de apontamento de BUGs funcione, afinal se ela não funcionar como vamos conseguir cadastrar e gerenciar os BUGs relatados por nossas pessoas? 
+#### Documentação e regras 
 
-**Cenários de testes OBRIGATÓRIOS**  
- - Criar uma branch `feature/seu-usuario-github` a partir da `main`;
+As regras da aplicação encontram-se [aqui](https://github.com/david-coca/SoluevoQAChallenge). 
 
- - Cenário 1 (Justificando uma criticidade)
- - - Ao apontar bug de criticidade Top Priority os usuários devem informar o motivo da classificação no campo [Descreva o motivo pelo qual Bug é considerado Top Priority];
+#### Requisitos
 
- - Cenário 2 (Cadastro de Bug com sucesso)
- - - Ao preencher o formulário com todos os campos obrigatórios e clicar no botão [Submit] o bug deve ser registrado e o sistema deve apresentar a mensagem [Você brilhou! Obrigado pela participação do nosso processo de seleção de QA.]
+Para a execução do projeto é necessário possuir:
+- [Maven](https://maven.apache.org/) 
+- [Java 1.8 ou +](https://www.java.com/pt-BR/) 
+
+## Instalando as dependências 
+
+```bash
+  mvn package
+```
+
+##### Execução
+
+Para execução do projeto navegue até a pasta raiz com um terminal de sua preferência e utilize o comando:
+
+`$ mvn exec:java -Dexec.mainClass="src.test.java.main.MainRunner"`
+
+O comando acima irá executar a classe Mainq que contém a chamada ao Cucumber. 
+
+Nota: 
+
+Caso queira também é possível executar utilizando a própria IDE de sua preferência, navegando até a classe Main e utilizando o comando 'Run'.
+
+Preferi utilizar composição ao invés de herança, deixando assim o acoplamento menor.
+
+## Estrutura de diretórios:
+
+- src: código fonte com a implementação
+- reports: imagens capturadas durante a execução
+
+## Tecnologias utilizadas:
+```bash
+- Maven
+- Java
+- JUnit
+- Cucumber
+- Selenium WebDriver
+```
 
 
-**Requisitos de negócios OBRIGATÓRIOS**
-- Construir a user story da página de acordo com as percepções como Negócio (Utilize BDD);
-- Elaborar os critérios de aceite com base nos campos obrigatórios disponíveis no formulário (Descrever no README);
-
-
-**Requisitos Técnicos OBRIGATÓRIOS** 
- - Os cenários deverão possuir o modelo BDD e para isso você de utilizar o Gherkin no Cucumber;
- - SeleniumWebdriver;
- - JUnit;
- - JAVA;
- - Versionar o código na sua branch `feature/seu-usuario-github`;
-
-**Vamos avaliar**
- - Raciocínio lógico; 
- - Conhecimento nas tecnologias aplicadas;
- - Documentação (Sim, gostamos de um bom readme);
- - Organização dos seus scripts e clareza do código;
-
- **Plus**
-  - Através do script de automação gerar um print da interface e anexar o mesmo utilizando o campo [Anexar prints do bug];
-  - - Construir a user story da página de acordo com as percepções como Negócio (Utilize BDD
-  - Clean Code;
-  - Documentação;  
-
-  ## Nossa ferramenta de apontamento de Bugs
-[https://app.pipefy.com/public/form/_Lid-wF_](https://app.pipefy.com/public/form/_Lid-wF_)
 
